@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boutique</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="../css/Menu.css">
+  <link rel="stylesheet" href="../css/Boutique.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+  <a href="Accueil.html" class="logo"><img src="../Img/Log_Alapphilippe.png" width="100px" alt=""></a>
+  <ul class="main-nav" id="js-menu">
+    <li>
+      <a href="Biographie.html" class="nav-links">Biographie</a>
+    </li>
+    <li>
+      <a href="Palmarès.html" class="nav-links">Palmarès</a>
+    </li>
+    <li>
+      <a href="Gallerie.html" class="nav-links">Gallerie</a>
+    </li>
+    <li>
+      <a href="Boutique.html" class="nav-links">Boutique</a>
+    </li>
+  </ul>
+</nav>
+<script>let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+
+  mainNav.classList.toggle('active');
+
+});</script>
+  <div class="title">
+    <h1> SA gallerie </h1>
+  </div>
+
+<ul class="listegallerie">
+  <li><img src="../Img/livrejulianarcenciel_480x.jpg" alt=""></li>
+  <li><img src="../Img/t-shirtchampuci_720x.png" alt=""></li>
+  <li><img src="../Img/TruckercapChampUCI_720x.png" alt=""></li>
+
+</ul>
+</body>
+</html>

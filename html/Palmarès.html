@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Palmrès</title>
+</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<link rel="stylesheet" href="../css/Menu.css">
+<link rel="stylesheet" href="../css/Palmarès.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+  <a href="Accueil.html" class="logo"><img src="../Img/Log_Alapphilippe.png" width="100px" alt=""></a>
+  <ul class="main-nav" id="js-menu">
+    <li>
+      <a href="Biographie.html" class="nav-links">Biographie</a>
+    </li>
+    <li>
+      <a href="Palmarès.html" class="nav-links">Palmarès</a>
+    </li>
+    <li>
+      <a href="Gallerie.html" class="nav-links">Gallerie</a>
+    </li>
+    <li>
+      <a href="Boutique.html" class="nav-links">Boutique</a>
+    </li>
+  </ul>
+</nav>
+<script>let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+
+  mainNav.classList.toggle('active');
+
+});</script>
+<div class="title">
+  <h1> SON palmarès </h1>
+</div>
+
+<div class="container-bio">
+  <img class="imgbio" src="../Img/Alaph.jpg" alt="">
+  <div class="bio">
+    <ul>
+      <li>- 2x  Champion du monde sur route </li>
+      <li>- 2x  Champion du monde sur route </li>
+      <li>- 2x  Champion du monde sur route </li>
+      <li>- 2x  Champion du monde sur route </li>
+      <li>- 2x  Champion du monde sur route </li>
+      <li>- 2x  Champion du monde sur route </li>
+      <li>- 2x  Champion du monde sur route </li>
+      <li>- 2x  Champion du monde sur route </li>
+      <li>- 2x  Champion du monde sur route </li>
+      <li>- 2x  Champion du monde sur route </li>
+    </ul><span id="dots"></span><span id="more">
+    <li>- 6x  étapes Tour de France </li>
+      <li>- 6x  étapes Tour de France </li>
+      <li>- 6x  étapes Tour de France </li>
+      <li>- 6x  étapes Tour de France </li>
+      <li>- 6x  étapes Tour de France </li>
+      <li>- 6x  étapes Tour de France </li>
+      <li>- 6x  étapes Tour de France </li>
+      </span></p>
+
+    <button onclick="myFunction()" id="myBtn">Plus</button>
+    <script> function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Plus";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Moins";
+        moreText.style.display = "inline";
+      }
+    } </script>
+  </div>
+</div>
+</body>
+</html>

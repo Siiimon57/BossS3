@@ -1,0 +1,37 @@
+body {
+    background-image: url("../Img/FOND.png");
+    background-repeat: no-repeat;
+    background-position: center -80px;
+}
+
+h1 {
+    font-size: 7vw;
+    font-family: "Quick Starter", sans-serif;
+    color: white;
+    width: 200px;
+    margin-top: 200px;
+}
+.title button {
+    background-color: #FFFF00;
+    padding:1em 1.2em;
+    border-radius: 5em;
+    text-align:center;
+    width: 30vw;
+    border: none;
+    position: relative;
+    margin-top: 30px;
+    font-family: Suissnord,sans-serif;
+}
+.title {
+    margin: 50px;
+}
+@media (max-width: 768px) {
+    .title button {
+        width: 50vw;
+    }
+
+    .title {
+        margin-left: 30px;
+        margin-top: 300px;
+    }
+}

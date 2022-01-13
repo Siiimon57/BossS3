@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Biographie</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="../css/Menu.css">
+  <link rel="stylesheet" href="../css/Biographie.css">
+</head>
+<body>
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+  <a href="Accueil.html" class="logo"><img src="../Img/Log_Alapphilippe.png" width="100px" alt=""></a>
+  <ul class="main-nav" id="js-menu">
+    <li>
+      <a href="Biographie.html" class="nav-links">Biographie</a>
+    </li>
+    <li>
+      <a href="Palmarès.html" class="nav-links">Palmarès</a>
+    </li>
+    <li>
+      <a href="Gallerie.html" class="nav-links">Gallerie</a>
+    </li>
+    <li>
+      <a href="Boutique.html" class="nav-links">Boutique</a>
+    </li>
+  </ul>
+</nav>
+<script>let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+
+  mainNav.classList.toggle('active');
+
+});</script>
+<div class="title">
+<h1> SA biographie </h1>
+</div>
+
+<div class="container-bio">
+  <img class="imgbio" src="../Img/Alaph.jpg" alt="">
+<div class="bio">
+  <p>Le cyclisme ou la musique ? Julian raconte qu’il n’avait jamais
+    imaginé devenir champion du monde dans son sport. Il avait
+    plutôt envisagé une carrière musicale sur les traces de « Jo », son
+    père, à la fois chef d’orchestre et chanteur d’un célèbre groupe du
+    Cher et l’Allier, au centre de la France.
+    Adolescent, il joue de la batterie « à l’oreille », et l’on retrouve
+    invariablement cet instinct l’animer lorsqu’il convoite la victoire
+    dans les plus grandes courses. La pratique de la batterie demande
+    une énergie folle, une parfaite motricité des membres inférieurs et
+    supérieurs. Le batteur est toujours en mouvement.
+    Comme l’enfant de Saint-Amand-Montrond (Cher) où Julian naît
+    le 11 juin 1992. Il passe ses six premières années dans un petit
+    immeuble, à cent mètres à peine d’un vélodrome, un hasard
+    prémonitoire ! Ses parents déménagent à cinquante kilomètres de
+    là, à Montluçon où il vit jusqu’à l’âge adulte auprès de ses deux
+    frères cadets, Bryan et Léo.
+    Dans la famille Alaphilippe, Franck, le grand cousin, est un très bon
+    coureur du peloton amateur. Son père emmène Julian sur les
+    courses que dispute Franck. Il a aussi l’heureuse idée de l’inscrire
+    dans un club pour canaliser l’énergie débordante de son fils. Ce
+    dernier fait ses gammes à l’Entente Cycliste Montmarault-
+    Montluçon.<span id="dots"></span><span id="more">
+      Ses premiers éducateurs remarquent chez lui un véritable don
+d’agilité dès qu’il enfourche son vélo. Il adore exécuter des mono-
+roues et adopter la position « superman » qui consiste à s’allonger
+sur sa bicyclette en imitant le héros de cinéma. Pédaler le rend
+heureux. Il a toujours la « banane », comme on dit pour définir une
+personne radieuse. Pour lui, l’école est d’abord buissonnière.
+Il préfère de loin les grands espaces, la nature, que demeurer entre
+les quatre murs d’une salle de classe où il se sent trop à l’étroit.
+Entre 16 et 18 ans, sa passion pour le vélo le conduit à briguer un
+Certificat d’aptitude professionnelle de mécanicien cycles et
+motocycles. Il alterne les cours et un emploi d’apprenti dans un
+magasin. « Cela me plaisait, j’aimais bien parler du matériel avec
+les clients, échanger avec eux, raconte-t-il.
+Je connais la valeur du matériel. J’ai beaucoup de respect pour les
+mécanos qui passent deux heures dessus après la course. Je sais
+le travail que cela représente. »</span></p>
+
+  <button onclick="myFunction()" id="myBtn">Plus</button>
+  <script> function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Plus";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Moins";
+      moreText.style.display = "inline";
+    }
+  } </script>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+.bio li {
+    padding: 20px 30px;
+    padding-right: 20%;
+    line-height: 1.5;
+}
+body {
+    background-color: black;
+    background-image: url("../Img/Groupe 5.png");
+    background-repeat: no-repeat;
+    background-position: center -300px;
+}
+h1 {
+    font-size: 7vw;
+    font-family: "Quick Starter", sans-serif;
+    color: white;
+    width: 200px;
+    margin-top: 200px;
+}
+.title {
+    margin: 50px;
+    margin-bottom: 350px;
+}
+div.bio {
+    background-color: #FFFF00;
+    font-family: Arial,sans-serif;
+    width: 60vw;
+}
+p {
+    padding: 20px 30px;
+    padding-right: 20%;
+    line-height: 1.5;
+}
+img.imgbio {
+    width: 20%;
+    object-fit: contain;
+    align-self: flex-start;
+    margin-left: -50px;
+    z-index: 1;
+
+}
+div.container-bio{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background-color: black;
+}
+#more {display: none;}
+
+li {
+    list-style-type: none ;
+}
+#myBtn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    font-family: Suissnord, sans-serif;
+    margin-left: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+    .title {
+        margin-left: 30px;
+        margin-top: 300px;
+        margin-bottom: 350px;
+    }
+    img.imgbio {
+        display: none;
+    }
+    div.bio {
+        background-color: #FFFF00;
+        font-family: Arial,sans-serif;
+        width: 100vw;
+    }
+    p {
+        padding: 20px 30px;
+        line-height: 1.5;
+    }
+}
